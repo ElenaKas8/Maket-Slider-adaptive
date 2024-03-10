@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 803px) {
+/* @media screen and (max-width: 803px) {
     .container{
         max-width: 803px;
         padding: 0 92px;
@@ -52,7 +52,7 @@
         align-items: center;
         /* gap: 30px;   */
 
-    }
+    /* }
    
     .about_us2{
         display: flex;
@@ -99,10 +99,39 @@
    .header{
     max-width: 803px;
    }
-    }
+    } */
 
+     
     
+      
+      
+      
+     @media screen  and (min-width: 1116px) {
+        .container{
+            max-width: 1116px;
+        }
+        .list{
+            display: flex;
+        align-items: center;
+        gap : 61px;
+      
     
-      
-      
-      
+         }
+        .container-header{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+        }
+         .contakty {
+            display: flex;
+           
+        }
+        .burger {
+            display: none;
+        }
+
+
+     }  
+
+     
