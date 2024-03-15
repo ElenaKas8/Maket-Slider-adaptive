@@ -108,30 +108,26 @@
       
      @media screen  and (min-width: 1116px) {
         .container{
-            max-width: 1116px;
+            max-width: 11px;
         }
         .list{
-            display: flex;
-        align-items: center;
-        gap : 61px;
-      
-    
-         }
-        .container-header{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 30px;
+        display: flex;
+        justify-content: center;
+        gap : 68px;
+        align-items: center;   
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.8;
         }
+      
+
+ 
          .contakty {
             display: flex;
            
         }
-        .burger {
-            display: none;
-        }
+     }
 
-
-     }  
+     
 
      

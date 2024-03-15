@@ -1,149 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BuhOne</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./maket.css" />
     <link rel="stylesheet" href="./desctop.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header container">
-        <div class="container-header ">
-            <div class="logo">
-            <div class="logo1">
-                <img src="./images/logo.png" alt="logo">
-            </div>
-            <div class="logo2">
-                <img src="./images/buhone.png" alt="logo2">
-            </div>     
+      <div class="container-header">
+        <div class="logo">
+          <div class="logo1">
+            <img src="./images/logo.png" alt="logo" />
           </div>
-        
-            <div class="header-navigation">
-
-                    <div class="header-list list">
-
-                        <a href="./http://127.0.0.1:5500/hw-22.02/maket.html#">ГЛАВНАЯ</a>
-
-
-                        <a href="#">УСЛУГИ</a>
-
-
-                        <a href="#">КЕЙСЫ</a>
-
-
-                        <a href="#">О КОМПАНИИ</a>
-
-
-                        <a href="#">КОНТАКТЫ</a>
-
-                    </div>
-                <div class="burger">
-                    
-                        <i class="fa-solid fa-bars burger_menu"></i>
-            
-                    </div>
-           </div>
-           
-           <div class="contakty">
-                <a href="#" type="button">СВЯЗАТЬСЯ</a>
-            </div>
+          <div class="logo2">
+            <img src="./images/buhone.png" alt="logo2" />
+          </div>
         </div>
 
+        <div class="header-navigation">
+          <div class="header-list list">
+            <a href="./http://127.0.0.1:5500/hw-22.02/maket.html#">ГЛАВНАЯ</a>
+
+            <a href="#">услуги</a>
+
+            <a href="#">кейсы</a>
+
+            <a href="#">о компании</a>
+
+            <a href="#">контакты</a>
+
+            <a href="#">связаться</a>
+          </div>
+          <div class="burger">
+            <i class="fa-solid fa-bars burger_menu"></i>
+          </div>
+        </div>
+      </div>
     </header>
 
-   <section class="hero container">
-    <section class="hero container">
-        <div class="hero-content ">
-            <div class="hero-text container">
-                <div class="frame">
-                    <h1>Бухгалтерские услуги
-                        в вашем любимом городе
-                    </h1>
-                    <a href="#">Наша презентация</a>   
-                </div>
-                <div class="triggers">
-                    <button><</button>
-                    <button>></button>
-                </div>
-                <div class="slider_btns"></div>
+    <main class="main">
+      <section class="hero container">
+        <div class="hero-content">
+          <div class="hero-text container">
+            <div class="frame2">
+              <h1>Бухгалтерские услуги в вашем любимом городе</h1>
+              <a href="#">Наша презентация</a>
             </div>
+            <div class="triggers">
+              <button><</button>
+              <button>></button>
+            </div>
+            <div class="slider_btns"></div>
+          </div>
         </div>
-    </section>
-    
+      </section>
 
-   <!-- <section class="our-services container">
-    <p>Наши услуги</p>
-    
-    <h2>Мы специализируемся</h2>
-<ul>
-    <li>
-        <img src="./images/ourwork2.png" alt="мы специализируемся фото">
-        <p>Бухгалтерское
-обслуживание</p>
-    </li>
-    <li>
-        <img src="./images/ourwork2.png" alt="мы специализируемся фото">
-        <p>Бухгалтерское
-обслуживание</p>
-    </li>
-    <li>
-        <img src="./images/ourwork2.png" alt="мы специализируемся фото">
-        <p>Бухгалтерское
-обслуживание</p>
-    </li>
-    <li>
-        <img src="./images/ourwork2.png" alt="мы специализируемся фото">
-        <p>Бухгалтерское
-обслуживание</p>
-    </li>
-    <li>
-        <img src="./images/ourwork2.png" alt="мы специализируемся фото">
-        <p>Бухгалтерское
-обслуживание</p>
-    </li>
-    <li>
-        <img src="./images/ourwork2.png" alt="мы специализируемся фото">
-        <p>Бухгалтерское
-обслуживание</p>
-    </li>
-</ul>
+      <section class="ourwork">
+        <div class="container">
+          <p>Наши услуги</p>
+          <h2>Мы специализируемся</h2>
+          <ul class="posts">
+            <li class="post">
+              <a href="#">
+                <picture>
+                  <!-- For viewports wider than 768px -->
+                  <source media="(min-width: 768px)" srcset="" />
 
-   </section>
+                  <!-- For viewports between 320px and 768px -->
+                  <source
+                    media="(min-width: 320px) and (max-width: 780px)"
+                    srcset=""
+                  />
 
-   <section class="about-as container">
-<p>О нас</p>
-<h2>
-    Компания <br>
-    ИвановПром
-</h2>
-   </section> -->
-   
-   <!-- <section class="our-clients container">
-    <p>Наши клиенты</p>
-    <h2>С нами работают</h2>
-   </section>
-   <section class=" customer-reviews container">
-<p>Отзывы</p>
-<h2>
-    Ваши благодарности
-</h2>
-<div>
-<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба",
-     часто используемый в печати и вэб-дизайне. </p>
-    </div>
-   </section> -->
-   <!-- <footer>
+                  <!-- Fallback content -->
+                  <img src="images/ourwork2.png" alt="Description of Image" />
+                </picture>
+                <div class="overlay">
+                  <h3 class="post-title sub-title">
+                    Бухгалтерское обслуживание
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#">
+                <img
+                  src="images/ourwork2.png"
+                  alt="Description of Image"
+                  class="post-img"
+                />
+                <div class="overlay">
+                  <h3 class="post-title sub-title">
+                    Бухгалтерское обслуживание
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#">
+                <img
+                  src="images/ourwork2.png"
+                  alt="Description of Image"
+                  class="post-img"
+                />
+                <div class="overlay">
+                  <h3 class="post-title sub-title">
+                    Бухгалтерское обслуживание
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#">
+                <img
+                  src="images/ourwork2.png"
+                  alt="Description of Image"
+                  class="post-img"
+                />
+                <div class="overlay">
+                  <h3 class="post-title sub-title">
+                    Бухгалтерское обслуживание
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#">
+                <img
+                  src="images/ourwork2.png"
+                  alt="Description of Image"
+                  class="post-img"
+                />
+                <div class="overlay">
+                  <h3 class="post-title sub-title">
+                    Бухгалтерское обслуживание
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#">
+                <img
+                  src="images/ourwork2.png"
+                  alt="Description of Image"
+                  class="post-img"
+                />
+                <div class="overlay">
+                  <h3 class="post-title sub-title">
+                    Бухгалтерское обслуживание
+                  </h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-as container">
+        <p>О нас</p>
+        <h2>
+          Компания <br />
+          ИвановПром
+        </h2>
+
+        <p>
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+          вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+          латинице с начала XVI века. В то время некий безымянный печатник
+          создал большую коллекцию размеров и форм шрифтов, используя Lorem
+          Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+          без заметных изменений пять веков, но и перешагнул в электронный
+          дизайн.
+        </p>
+
+        <div class="card-about-us">
+          <num>90</num>
+          <p>Завершено крупных сделок</p>
+          <a href="#">Все кейсы</a>
+        </div>
+        <div class="card-about-us">
+          <num>90</num>
+          <p>Завершено крупных сделок</p>
+          <a href="#">Все кейсы</a>
+        </div>
+        <div class="card-about-us">
+          <num>90</num>
+          <p>Завершено крупных сделок</p>
+          <a href="#">Все кейсы</a>
+        </div>
+        <div class="card-about-us">
+          <num>90</num>
+          <p>Завершено крупных сделок</p>
+          <a href="#">Все кейсы</a>
+        </div>
+      </section>
+
+    <section class="our-clients container">
+        <div class="our-clients-content">
+          <div class="hero-text container">
+            <div class="frame2">
+              <p>Наши клиенты</p>
+              <h2>С нами работают</h2>
+              <img src="images/microsoft.png" alt="subscribe images">
+            </div>
+            <div class="triggers2">
+              <button><</button>
+              <button>></button>
+             
+            </div>
+            <div class="slider2_btns"></div>
+          </div>
+        </div>
+      </section>
+      
+
+       
+
+      <section class="customer-reviews container">
+        <p>Отзывы</p>
+        <h2>Ваши благодарности</h2>
+        <div>
+          <p>
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+            латинице с начала XVI века. В то время некий безымянный печатник
+            создал большую коллекцию размеров и форм шрифтов, используя Lorem
+            Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто
+            используемый в печати и вэб-дизайне.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- <footer>
     <h2>Связь с нами</h2>
     <p>У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
    <div class="contacts">
@@ -165,10 +267,11 @@
    </div>
 
 </footer> -->
+  </body>
 
-</body>
-                    
-    
-    <script src="https://kit.fontawesome.com/135c4e0ba8.js" crossorigin="anonymous"></script>
-   <script src="maket.js"></script>
+  <script
+    src="https://kit.fontawesome.com/135c4e0ba8.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="maket.js"></script>
 </html>
