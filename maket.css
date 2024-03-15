@@ -655,7 +655,8 @@ background-image: url("./images/hero_bg.png");
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom:1px solid var(--card-color); ;
+    border-bottom:1px solid var(--card-color); 
+    color: var(--white-color);
    
   }
 
