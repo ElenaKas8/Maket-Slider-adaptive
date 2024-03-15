@@ -122,3 +122,62 @@ document.addEventListener('DOMContentLoaded', function () {
 
     changeActiveBtn2();
 });
+
+
+// ------------customer feedback---------------
+
+document.addEventListener('DOMContentLoaded', function () {
+    const reviews = [
+      "Lorem Ipsum - это текст-'рыба', часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века.",
+      "В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.",
+      "Lorem Ipsum - это текст-'рыба', часто используемый в печати и веб-дизайне.",
+      // Добавьте дополнительные отзывы здесь
+    ];
+  
+    const feedback = document.querySelector('.customer-feedback p');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const sliderBtns = document.querySelector('.slider3_btns');
+  
+    let currentIndex = 0;
+  
+    // Функция для обновления текста отзыва
+    function updateFeedback() {
+      feedback.textContent = reviews[currentIndex];
+      updateSliderBtns();
+    }
+  
+    // Обработчик нажатия на кнопку "Предыдущий"
+    prevBtn.addEventListener('click', function () {
+      currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+      updateFeedback();
+    });
+  
+    // Обработчик нажатия на кнопку "Следующий"
+    nextBtn.addEventListener('click', function () {
+      currentIndex = (currentIndex + 1) % reviews.length;
+      updateFeedback();
+    });
+  
+    // Обновление круглых кнопок слайдера
+    function updateSliderBtns() {
+      sliderBtns.innerHTML = '';
+      for (let i = 0; i < reviews.length; i++) {
+        const roundBtn = document.createElement('button');
+        roundBtn.className = 'round3_btn';
+        if (i === currentIndex) {
+          roundBtn.classList.add('active');
+        }
+        sliderBtns.appendChild(roundBtn);
+        roundBtn.addEventListener('click', function () {
+          currentIndex = i;
+          updateFeedback();
+        });
+      }
+    }
+  
+    // Первоначальное обновление текста отзыва и круглых кнопок
+    updateFeedback();
+  });
+  
+  
