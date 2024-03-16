@@ -9,6 +9,8 @@
     --white-color: #fff;
     --font-family: "Lato", sans-serif;
     --second-family: "Merriweather", sans-serif;
+    --hover-color: #005FA3;
+    
 
 }
 
@@ -39,7 +41,7 @@ h3{
     font-family: "Lotto, sans-serif";
     font-weight: 300px;  
     font-size: 24px;
-    color: var(--title-color);}
+    color: var(--white-color);}
 
 img {
     display: block;
@@ -75,6 +77,9 @@ num {
     font-size: 40px;
 }
 
+.reviu_avatar {
+  display:none ;
+}
 .container {
     max-width: 754px;
     margin: 0 auto;
@@ -152,19 +157,6 @@ num {
 }
 
 
-/* ----------hero-- */
-/* .hero {
-    background-image: url(./images/bg-img.png);   
-    background-size: cover;
-    width:100%;
-    height: 670px;
-    color: var(--hero-bgcolor);
-}
-.hero-content {
-    display: flex;
-    max-width: 592px;
-  */
-/* } */
 
 
 .hero {
@@ -194,10 +186,7 @@ num {
     text-align: left;
     max-width: 592px;
     text-align: left;
-    position: relative;    
-    padding-bottom: 150px;
-    margin-bottom: 150px;
-
+    position: relative;      
     
 }
 
@@ -230,7 +219,7 @@ num {
 
 
 
-/* Hero Sliser-------------------------- */
+/* Hero Slider-------------------------- */
 
 
 
@@ -257,9 +246,6 @@ num {
     transition: 0.5s;
 
 }
-
-
-
 
 
 .triggers>button {
@@ -327,24 +313,15 @@ num {
 
 .triggers {
     position: absolute;
-    bottom: 10px;
     width: 100%;
     display: flex;
-    justify-content:flex-end;
-    padding-right: 119px;
-    
-
+    justify-content:flex-end; 
 
 }
 
 
 /* -------наши услуги */
-/* 
-.container {
-    max-width: 1128px;
-    margin: auto;
-    padding: 0 16px;
-  } */
+
   
   .posts {
     margin-bottom: 80px;
@@ -353,22 +330,22 @@ num {
     grid-template-columns: 1fr;
   }
   
-  /* @media (min-width: 768px) {
-    .posts {
-      gap: 24px;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .post:first-child {
-      grid-column: 1 / 2;
-      grid-row: 1 / 3;
-    }
-  } */
   
   .post > a {
     position: relative;
     color: var(--common-white);
+    display: block;
   }
+  .post-img {
+    transition: transform 0.3s ease; 
+  }
+
+  .post:hover {
+    background-image: url('images/ourwork1.png');
+    background-color: var(--accent-color);
+    background-size: cover; 
+  }
+  
   
   .overlay {
     border-radius: 0px 0px 16px 16px;   
@@ -379,27 +356,8 @@ num {
     
   }
   
-  @media (min-width: 1440px) {
-    .overlay {
-      padding: 24px 48px;
-    }
-  }
-  
-  .post-title {
-    color: var(--card-color);
-    font-family: var(--font-family);
-    
-  }
   
 
-
-.grid-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-    }
     
     .post-img:hover{
         background-image: url('images/ourwork1.png');
@@ -442,7 +400,6 @@ num {
 .our-clients {
     margin-top: 150px;
     margin-bottom: 130px;
-
     background-color:var(--hero-bgcolor);
     background-position: center center; 
     background-size: cover;
@@ -459,6 +416,7 @@ num {
 
 .our-clients{
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -676,4 +634,7 @@ transition: all;
     background-color: var(--card-color);
     color: var(--accent-color);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .footer_wrapper h2{
+    color: var(--white-color);
   }
