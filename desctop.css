@@ -167,6 +167,14 @@
 
 /*  */
 
+.clients_triggers_btns{
+  display: flex;
+  padding-top: 200px;
+ justify-content: flex-end;
+ z-index: 1;
+
+}
+
 .clients_wrapper{
   height: 630px;
   background-color: #EBEBEB;

@@ -613,18 +613,25 @@ num {
     display: flex;
     justify-content:flex-start;
     align-items: center;
+
     gap: 30px;
     position: relative;
     width: 100%;
     max-width: 600px;
    height: 300px;
     overflow: hidden;
-    background-color:var(--hero-bgcolor);
-   
-
+   background-color:var(--hero-bgcolor);  
     
   }
   
+.reviu_avatar>img{
+  display:none;
+  
+ 
+  
+}
+
+
   .review-controls {
     position: absolute;
     right:10%;

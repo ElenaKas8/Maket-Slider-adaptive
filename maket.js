@@ -1,72 +1,7 @@
 
 
-// const frame = document.querySelector('.frame');
-// const textSlidesContainer = document.querySelector('.hero-text.container');
-// let slider_index = 0;
-
-// const texts = [
-//     'По любому вопросу',
-//     'Мы решим вашу задачу',
-//     'Сотрудники с опытом',
-//     'Обращайтесь к нам'
-// ];
-
-// const title = document.querySelector('.hero-text h1');
-
-// const [leftBtn, rightBtn] = document.querySelectorAll('.triggers > button');
-
-// rightBtn.onclick = () => {
-//     if (slider_index !== texts.length - 1) {
-//         slider_index++;
-//     } else {
-//         slider_index = 0;
-//     }
-//     updateText();
-// };
-
-// leftBtn.onclick = () => {
-//     if (slider_index !== 0) {
-//         slider_index--;
-//     } else {
-//         slider_index = texts.length - 1;
-//     }
-//     updateText();
-// };
-
-// const slider_btns = document.querySelector('.slider_btns');
-
-// for (let i = 0; i < texts.length; i++) {
-//     const round_btn = document.createElement('button');
-//     round_btn.className = 'round_btn';
-//     slider_btns.append(round_btn);
-
-//     round_btn.onclick = () => {
-//         slider_index = i;
-//         updateText();
-//     };
-// }
-
-// function updateText() {
-//     title.textContent = texts[slider_index];
-//     changeActiveBtn();
-// }
-
-// function changeActiveBtn() {
-//     const all_btns = document.querySelectorAll('.round_btn');
-//     all_btns.forEach((elem, index) => {
-//         if (slider_index === index) {
-//             elem.classList.add('active');
-//         } else {
-//             elem.classList.remove('active');
-//         }
-//     });
-// }
-
-
-
-
 const banner_container = document.querySelector('.banner.slider_container')
-const clients_container = document.querySelector('.clients.slider_container')
+ const clients_container = document.querySelector('.clients.slider_container')
 const div_banner_round = document.querySelector('.banner_round_btns')
 const container = document.querySelector('.container')
 
@@ -76,7 +11,7 @@ let banner_data = [
     {text: 'Бухгалтерские услуги от профессионалов', btn_text: 'Наши услуги'},
     {text: 'Наши специалисты помогут Вам', btn_text: 'Наша презентация '},
 ]
-let client_data = Array(8)
+ let client_data = Array(8)
 
 let slide_width = container.clientWidth
 
@@ -135,11 +70,9 @@ banner_left_btn.onclick = () => {
 
 for (let i = 0; i < client_data.length; i++){
     const client_img = document.createElement('img')
-    client_img.src = './media/client.png'
+    client_img.src = './images/microsoft.png'
     clients_container.append(client_img)
 }
-
-
 
 
 function chnageActiveBtns(){
@@ -161,63 +94,51 @@ chnageActiveBtns()
 
 //-----------Slider2-----------------
 
-document.addEventListener('DOMContentLoaded', function () {
-    const frame2 = document.querySelector('.our-clients-content .hero-text');
-    const cards_container = frame2.querySelector('img');
 
-    let slider2_index = 0;
 
-    const images2 = [
-        'images/microsoft.png',
-        'images/portfol.png',
-        'images/buhone.png',
-    ];
 
-    // Добавляем первое изображение в cards_container
-    cards_container.src = images2[0];
+// const clientsContainer = document.querySelector('.clients.slider_container');
+// const leftButton = document.querySelector('.btn_slider.left');
+// const rightButton = document.querySelector('.btn_slider.right');
+// let clientIndex = 0;
 
-    const [leftButton, rightButton] = document.querySelectorAll('.our-clients-content .triggers2 button');
+// // Создание клиентских элементов
+// const clientCount = 8;
+// const slideWidth = clientsContainer.clientWidth;
 
-    rightButton.onclick = () => {
-        slider2_index = (slider2_index + 1) % images2.length;
-        cards_container.src = images2[slider2_index];
-        changeActiveBtn2();
-    };
+// for (let i = 0; i < clientCount; i++) {
+//     const clientImg = document.createElement('img');
+//     clientImg.src = './images/microsoft.png';
+//     clientsContainer.appendChild(clientImg);
+// }
 
-    leftButton.onclick = () => {
-        slider2_index = (slider2_index - 1 + images2.length) % images2.length;
-        cards_container.src = images2[slider2_index];
-        changeActiveBtn2();
-    };
+// // Функция для обновления позиции слайдера
+// function updateSliderPosition() {
+//     clientsContainer.style.transform = `translateX(-${clientIndex * slideWidth}px)`;
+// }
 
-    const slider2_btns = document.querySelector('.our-clients-content .slider2_btns');
+// // Обработчик события для кнопки "Влево"
+// leftButton.addEventListener('click', () => {
+//     if (clientIndex > 1) {
+//         clientIndex -= 2;
+//         updateSliderPosition();
+//     }
+// });
 
-    // Добавляем кнопки выбора слайда
-    images2.forEach((_, i) => {
-        const round_btn = document.createElement('button');
-        round_btn.className = 'round_btn';
-        slider2_btns.appendChild(round_btn);
+// // Обработчик события для кнопки "Вправо"
+// rightButton.addEventListener('click', () => {
+//     if (clientIndex < clientCount - 2) {
+//         clientIndex += 2;
+//         updateSliderPosition();
+//     }
+// });
 
-        round_btn.onclick = () => {
-            slider2_index = i;
-            cards_container.src = images2[slider2_index];
-            changeActiveBtn2();
-        };
-    });
 
-    function changeActiveBtn2() {
-        const all_btns = document.querySelectorAll('.our-clients-content .round_btn');
-        all_btns.forEach((elem, index) => {
-            if (slider2_index === index) {
-                elem.classList.add('active');
-            } else {
-                elem.classList.remove('active');
-            }
-        });
-    }
+// updateSliderPosition();
 
-    changeActiveBtn2();
-});
+
+
+
 
 
 // ------------customer feedback---------------
