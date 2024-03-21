@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Lorem Ipsum - это текст-'рыба', часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной 'рыбой' для текстов на латинице с начала XVI века.",
       "В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.",
       "Lorem Ipsum - это текст-'рыба', часто используемый в печати и веб-дизайне.",
-      // Добавьте дополнительные отзывы здесь
+      
     ];
   
     const feedback = document.querySelector('.customer-feedback p');
@@ -158,25 +158,25 @@ document.addEventListener('DOMContentLoaded', function () {
   
     let currentIndex = 0;
   
-    // Функция для обновления текста отзыва
+    
     function updateFeedback() {
       feedback.textContent = reviews[currentIndex];
       updateSliderBtns();
     }
   
-    // Обработчик нажатия на кнопку "Предыдущий"
+   
     prevBtn.addEventListener('click', function () {
       currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
       updateFeedback();
     });
   
-    // Обработчик нажатия на кнопку "Следующий"
+
     nextBtn.addEventListener('click', function () {
       currentIndex = (currentIndex + 1) % reviews.length;
       updateFeedback();
     });
   
-    // Обновление круглых кнопок слайдера
+    
     function updateSliderBtns() {
       sliderBtns.innerHTML = '';
       for (let i = 0; i < reviews.length; i++) {
@@ -196,5 +196,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Первоначальное обновление текста отзыва и круглых кнопок
     updateFeedback();
   });
+  
   
   

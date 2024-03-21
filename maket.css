@@ -532,7 +532,94 @@ num {
 
 /* ------------slider2 */
 
-.frame2 {
+
+
+.clients_wrapper{
+  height: 630px;
+  background-color: #EBEBEB;
+}
+
+.main_section_text{
+  color: #BDBDBD;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.second_section_text{
+  color: #333333;
+  font-family: "Merriweather", serif;
+  font-weight: 700; 
+  font-size: 48px;
+}
+
+.clients.triggers_btns > button {
+  background-color: #005fa362;
+}
+
+.clients.triggers_btns > button:hover {
+  background-color: #005fa3;
+}
+
+.clients_wrapper > div {
+  height: 300px;
+}
+
+.clients.frame{
+  height: 500px;
+}
+
+.clients.round_btns > button{
+  background-color:  #005fa3;
+}
+
+.clients.slider_container > img {
+  width: 255px;
+  height: 130px;
+  margin-right: 31px;
+}
+
+.clients.slider_container > img:nth-child(4n){
+  margin-right: 0;
+}
+
+.clients.slider_container{
+  display: flex;
+}
+
+
+@media(max-width: 1200px){
+  .container{
+      max-width: 600px;
+  }
+  .menu_wrapper{
+      display: none;
+  }
+  .burger_menu{
+      display: inline;
+  }
+  .container{
+      max-width: 600px;
+  }
+  .banner_elem{
+      width: 600px;
+  }
+  .clients.slider_container > img {
+      width: 480px;
+      height: 200px;
+      margin-left: 60px;
+      margin-right: 60px;
+  }
+  .clients.slider_container > img:nth-child(4n){
+      margin-right: 60px;
+  }
+  
+
+}
+
+
+
+/* .frame2 {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -550,8 +637,8 @@ num {
     bottom: 0;
     right: 0;
     display: flex;
-    align-items: center; /* Центрирование кнопок по вертикали */
-    gap: 5px; /* Расстояние между кнопками */
+    align-items: center; 
+    gap: 5px; 
   }
   
   .triggers2 button {
@@ -570,9 +657,9 @@ num {
   .triggers2 button:hover {
     opacity: 0.6;
     background-color:var(--accent-color);
-  }
+  } */
   
-  .slider2_btns {
+  /* .slider2_btns {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -599,7 +686,7 @@ num {
     background-color: var(--accent-color);
   }
   
-  
+   */
 
   /*    customer feedback------------------- */
 
@@ -625,9 +712,7 @@ num {
   }
   
 .reviu_avatar>img{
-  display:none;
-  
- 
+  display:none; 
   
 }
 
