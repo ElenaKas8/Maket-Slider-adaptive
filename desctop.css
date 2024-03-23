@@ -212,15 +212,31 @@
 
 .clients.slider_container{
   gap: 30px
+  
 }
 
 
 
+.clients{
+  display: flex;
+  justify-content: space-between; 
+  padding-top: 55px;
+ 
+
+}
+
+
+.slider_container{
+  display: flex;
+  justify-content: space-between;
+ 
+}
 
 
 
-
-
+.triggers {
+  bottom: 10%;
+}
   /* ------------------ */
 
   .header-navigation {

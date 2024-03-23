@@ -335,8 +335,7 @@ num {
 .frame {
     position: relative;
     width: 100%;
-    overflow: hidden;
-    max-width: 800px;  
+    overflow: hidden;  
     height: 600px;
    
 }
