@@ -1,6 +1,10 @@
 
- /* Скрывать бургер и показывать навигацию при ширине экрана 1116px */
-@media screen and (min-width: 1116px) {
+
+
+
+
+
+ @media screen and (min-width: 1116px) {
     .container{
         max-width: 1116px;
 
@@ -22,40 +26,7 @@
     .header-navigation .burger {
       display: none !important;
     }
-    /* .hero-content {
-        width: 1116px;
-    }
-    .hero{
-      background-image: url(./images/bg-header.png);
     
-    }
-    .hero-text{
-        padding-bottom: 0;
-        margin-bottom: 0;
-
-    }
-    .slider_btns {
-        
-        gap: 40px;
-
-    }
-    .triggers{
-        width: 1116px;
-        padding-right:200px ;
-    }
-    .triggers>button:hover {
-        background-color:var(--accent-color);
-
-    }
-    .triggers>button {
-       opacity: 0.6;
-        color: #ffffff;
-        font-size: 20px;
-    }
-    .contakty {
-      display: flex;
-     
-  } */
 
   /* ----------------Slider 1------- */
 
@@ -314,5 +285,68 @@
 .reviu_avatar {
   display: block;
 }
+
+
+
+ .footer_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 122px;
+  gap: 40px;
+
 }
 
+.footer_contacts {
+  width: 50%;
+}
+
+.contact-massage {
+  width: 50%;
+}
+.name{
+  padding-top: 0px;
+  display: table-row;
+  gap: 20px;
+ 
+}
+
+.form_wrapper{
+  display: flex;
+ 
+
+  gap: 20px;
+  
+}
+.footer_btn{
+  margin-right: 0;
+
+}
+
+.name_input {
+  display: inline-block;
+  margin-right: 30px; /* Добавляем небольшой отступ между полями */
+}
+
+.name_input p {
+  margin-bottom: 5px; /* Добавляем небольшой отступ между названием и полем ввода */
+}
+
+.name_input>input{
+  border: none;
+  border-bottom: 1px solid var(--card-color);
+  background-color:transparent;
+  color: var(--white-color);
+}
+textarea{
+  color: var(--white-color); 
+
+}
+.placeholder_text{
+  padding-top: 35px;
+  padding-bottom: 0;
+ 
+}
+placeholder{
+  
+}
+}

@@ -687,6 +687,18 @@ num {
   
   */
 
+
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer_contacts,
+  .contact-message {
+    width: 48%; 
+  }
+
   .footer_wrapper{
     margin-top:163px ;
     padding: 29px 79px 135px 67px;
@@ -747,4 +759,10 @@ transition: all;
   }
   .footer_wrapper h2{
     color: var(--white-color);
+  }
+
+  .name_input>input{
+    border: none;
+    border-bottom: 1px solid var(--card-color);
+    background-color:transparent;
   }
