@@ -10,8 +10,8 @@
     --font-family: "Lato", sans-serif;
     --second-family: "Merriweather", sans-serif;
     --hover-color: #005FA3;
+    --transition: transform 0.3s ease; 
     
-
 }
 
 *, *:before, *:after {
@@ -25,6 +25,7 @@
     list-style: none;
     text-decoration: none;
     outline: none;
+    
 }
 
 h2 {
@@ -48,9 +49,6 @@ img {
     max-width: 100%;
     height: auto;
     cursor: pointer;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    
     
 }
 
@@ -95,27 +93,7 @@ num {
     padding-top: 19px;
     padding-bottom: 21px;
 
-
-
 }
-
-/* .container {
-    max-width: calc(100% - 162px); /* 162px это сумма отступов (85px + 77px) */
-/* margin: 0 auto;
-    padding-right: 77px;
-    padding-left: 85px;
-}
-
-.container-header {
-    max-width: calc(100% - 162px); /* 162px это сумма отступов (85px + 77px) */
-/* margin: 0 auto;
-    padding-right: 77px;
-    padding-left: 85px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}  */
-
 
 .header-list {
     display: flex;
@@ -146,8 +124,6 @@ num {
     
 }
 
-
-
 .burger_menu {
     font-size: 40px;
 }
@@ -158,64 +134,7 @@ num {
 
 
 
-
-
-
-/* .hero-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 592px;
-    text-align: center;
-    font-size: 48px;
-    color: var(--hero-bgcolor);
-    font-family: var(--second-family);
-    font-weight: 700;
-    line-height: 1.3;
-
-}
-
-.hero-text {
-    
-    text-align: left;
-    max-width: 592px;
-    text-align: left;
-    position: relative;      
-    
-}
-
-
-
-.hero-text h1 {
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.3;
-    margin-bottom: 22px;
-    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
-
-
-}
-
-.hero-text a {
-    display: inline-block;
-    background-color: var(--accent-color);
-    padding: 10px 20px;
-    font-weight: 400;
-    font-size: 18px;
-
-}
-
-.hero-text a:hover {
-    background-color: #00497e;
-} */
-
-
-
-
 /* Hero Slider-------------------------- */
-
-
 
 
 .banner_wrapper{
@@ -448,12 +367,10 @@ num {
     transition: transform 0.3s ease; 
   }
 
-  .post:hover {
-    background-image: url('images/ourwork1.png');
-    background-color: var(--accent-color);
-    background-size: cover; 
+  .post-img:hover {
+    transform: scale(1.03);
+    content: url('./images/ourwork1.png');
   }
-  
   
   .overlay {
     border-radius: 0px 0px 16px 16px;   
@@ -463,16 +380,9 @@ num {
     bottom: 45px;
     
   }
-  
-  
 
     
-    .post-img:hover{
-        background-image: url('images/ourwork1.png');
-        background-position: center center; 
-        background-size: cover;
-        background-repeat: no-repeat;;
-    }
+    
 
     .ourwork{
         margin-top: 140px;
