@@ -167,6 +167,11 @@
 
 /*  */
 
+.main_section_text{
+  padding-top: 100px;
+  
+}
+
 .clients_triggers_btns{
   display: flex;
   padding-top: 200px;
