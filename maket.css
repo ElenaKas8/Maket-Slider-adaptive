@@ -741,23 +741,25 @@ background-image: url("./images/hero_bg.png");
   }
 
   .footer_btn {
+   border: none;
     margin-top: 43px;
-    float: right; /* Выравнивание кнопки справа */
-    margin-right: 147px; /* Отступ справа */
+    float: right; 
+    margin-right: 147px; 
     width: 270px;
     height: 60px;
     background-color: var(--accent-color);
     color: var(--hero-bgcolor);
    margin-bottom: 135px;
    cursor: pointer;
-transition: all;
+   transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .footer_btn:hover{
     background-color: var(--card-color);
     color: var(--accent-color);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .footer_wrapper h2{
+    }
+  
+  
+    .footer_wrapper h2{
     color: var(--white-color);
   }
 
@@ -766,3 +768,4 @@ transition: all;
     border-bottom: 1px solid var(--card-color);
     background-color:transparent;
   }
+
