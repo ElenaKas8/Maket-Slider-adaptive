@@ -1,5 +1,12 @@
 
 
+
+  
+
+
+  
+  
+
 // const banner_container = document.querySelector('.banner.slider_container')
 //  const clients_container = document.querySelector('.clients.slider_container')
 // const div_banner_round = document.querySelector('.banner_round_btns')

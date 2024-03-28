@@ -43,12 +43,43 @@
 
           <a href="#">связаться</a>
         </div>
-        <div class="burger">
+
+        <button class="menu-open js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon" width="32" height="22">
+            <use href="images\sprait.svg#menu-hamburger"></use>
+          </svg>
+        </button>
+        <!-- <div class="burger">
           <i class="fa-solid fa-bars burger_menu"></i>
-        </div>
+          <i class="fa-solid fa-xmark"></i>
+        </div> -->
       </div>
     </div>
+
+      <!-- --------MOB MENU FOR MOBILE-VERS----------- -->
+      <div class="mob-menu js-menu-container">
+        <div class="container">
+          <div class="menu-thumb">
+            <button class="menu-close js-close-menu" type="button">
+              <svg class="icon" width="18" height="18">
+                 <use href="images/sprait.svg#icon-close"></use> 
+              </svg>
+            </button>
+  
+            <ul class="menu-site-nav">
+              <li class="menu-item"><a class="menu-link current" href="./index.html">Услуги</a></li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">Кейсы</a>
+              </li>
+              <li class="menu-item"><a class="menu-link" href="">О компании</a></li>
+              <li class="menu-item"><a class="menu-link" href="">контакты</a></li>
+              <li class="menu-item"><a class="menu-link" href="">связаться</a></li>
+            </ul>
+          </div>
+          
   </header>
+  
+  
 
   <main>
     
@@ -283,5 +314,6 @@
 
 <script src="https://kit.fontawesome.com/135c4e0ba8.js" crossorigin="anonymous"></script>
 <script src="maket.js"></script>
+<script src="mobile.js"></script>
 
 </html>
