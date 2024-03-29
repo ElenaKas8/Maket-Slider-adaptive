@@ -721,15 +721,7 @@ button{
 
 
 
-  /* .footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .footer_contacts,
-  .contact-message {
-    width: 48%; 
-  } */
+
 
   .footer_wrapper{
     
@@ -765,37 +757,7 @@ background-image: url("./images/hero_bg.png");
     color: var(--white-color);
    
   } 
-  /* .contact{
-    height: 35px;
-
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .name{
-    padding-top: 160px;
-    display: flex;
-    justify-content: space-around;
-    gap: 33.9px;
-    background-color: transparent;
-    margin-bottom: 36.5px;
-  }
-  .name>input{
-    border: none;
-    width: 300px;
-    height: 60px;
-    background-color: transparent;
-    border-bottom: 1px solid var(--card-color);
-    position: relative;
-  }
-  textarea{
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom:1px solid var(--card-color); 
-    color: var(--white-color);
-   
-  } */
+ 
 
   .footer_btn {
    border: none;
