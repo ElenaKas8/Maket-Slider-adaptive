@@ -311,8 +311,6 @@
 }
 
 .form_wrapper{
-  display: flex;
- 
 
   gap: 20px;
   
@@ -346,5 +344,7 @@ textarea{
   padding-bottom: 0;
  
 }
+ 
+
 
 }

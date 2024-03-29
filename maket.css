@@ -119,11 +119,6 @@ num {
     font-size: 40px;
 }
 
-/* ---mobile menu */
-
-
-
-
 
 
 
@@ -133,9 +128,7 @@ num {
     
 }
 
-.burger_menu {
-    font-size: 40px;
-}
+
 
 .contakty {
     display: none;
@@ -728,7 +721,7 @@ button{
 
 
 
-  .footer {
+  /* .footer {
     display: flex;
     justify-content: space-between;
   }
@@ -736,9 +729,10 @@ button{
   .footer_contacts,
   .contact-message {
     width: 48%; 
-  }
+  } */
 
   .footer_wrapper{
+    
     margin-top:163px ;
     padding: 29px 79px 135px 67px;
 background-image: url("./images/hero_bg.png");
@@ -748,6 +742,30 @@ background-image: url("./images/hero_bg.png");
     color: var(--card-color);
   }
   .contact{
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+
+  }
+  .contact>p{
+    padding-left: 8px;
+    
+  }
+  .name{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 36px;
+
+  }
+  textarea{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid var(--card-color); 
+    color: var(--white-color);
+   
+  } 
+  /* .contact{
     height: 35px;
 
     display: flex;
@@ -777,7 +795,7 @@ background-image: url("./images/hero_bg.png");
     border-bottom:1px solid var(--card-color); 
     color: var(--white-color);
    
-  }
+  } */
 
   .footer_btn {
    border: none;
@@ -807,6 +825,9 @@ background-image: url("./images/hero_bg.png");
     border-bottom: 1px solid var(--card-color);
     background-color:transparent;
   }
+
+
+
 
 /*   mobile menu  */
 
